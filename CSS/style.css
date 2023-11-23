@@ -13,5 +13,11 @@ p {
 
 .p {
   color: aqua;
-  
+}
+
+.btn {
+  background-image: url("../assets/IMG.png");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
 }
