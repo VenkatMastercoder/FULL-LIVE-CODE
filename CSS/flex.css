@@ -1,0 +1,36 @@
+
+.box {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  /* height: 100vh; 100% */
+  /* width: 50vw; 50% */
+  text-align: center;
+  padding: 20px;
+}
+
+.box1 {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: red;
+}
+
+.box3 {
+  background-color: yellow;
+}
+
+.boxes-container {
+  /* display: flex; row */
+  display: flex; 
+  flex-direction: column; 
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid black;
+}
+
+.card {
+  height: 100vh;
+}
