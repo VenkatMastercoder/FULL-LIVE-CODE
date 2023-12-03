@@ -1,0 +1,24 @@
+.card {
+  color: aqua;
+  border: 1px solid red;
+}
+.color {
+  color: red;
+}
+
+.over-ride {
+  border: 1px solid red;
+  min-width: 150px;
+  max-height: 100px;
+}
+
+.overflow {
+  border: 1px solid red;
+  width: 300px;
+  height: 150px;
+  /* overflow: visible; default */
+  /* overflow: visible; auto */
+  /* overflow: visible; scroll */
+  overflow: hidden;  
+  overflow-x: scroll;
+}

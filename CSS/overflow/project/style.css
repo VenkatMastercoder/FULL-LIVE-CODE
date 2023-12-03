@@ -1,0 +1,29 @@
+.bg-container {
+  background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/summer-collection-bg.png");
+  height: 100vh;
+  font-size: 15px;
+}
+
+.card-container {
+  height: 60vh;
+  background-color: #fff;
+  color: #000;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.card-heading {
+  padding: 20px;
+  font-size: 24px;
+}
+
+.card-img {
+  max-width: 500px;
+}
+
+.card {
+  height: 60vh;
+  padding: 50px;
+  overflow-y: scroll;
+}
