@@ -1,0 +1,39 @@
+.heading {
+  color: aqua;
+  font-size: 70px;
+}
+
+.bg-container {
+  background-color: burlywood;
+  height: 100vh;
+}
+/* 
+@media (orientation:landscape) {
+  .bg-container {
+    background-color: red;
+    height: 100vh;
+  }
+} */
+
+/* @media (orientation:portrait) {
+  .bg-container {
+    background-color: green;
+    height: 100vh;
+  }
+} */
+
+
+@media screen and (max-width:300px) {
+  .bg-container {
+    background-color: green;
+    height: 100vh;
+  }
+}
+
+@media (min-width:150px) , (min-width:300px) {
+  .bg-container {
+    background-color: green;
+    height: 100vh;
+  }
+}
+

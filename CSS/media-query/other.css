@@ -1,0 +1,42 @@
+@media print {
+  .heading {
+    color: red;
+  }
+}
+
+/* min-width:600px - breakpoint */
+
+@media (min-width:600px) {
+
+  /* min - 600px - ♾️ */
+  .heading {
+    color: green;
+  }
+
+  .bg-container {
+    background-color: red;
+    height: 100vh;
+  }
+}
+
+
+@media (max-width:425px) {
+
+  /* max - 0px -  425px*/
+  .heading {
+    color: yellow;
+    font-size: 14px;
+  }
+
+  .bg-container {
+    background-color: red;
+    height: 100vh;
+  }
+}
+
+@media (max-width:768px) {
+  .heading {
+    color: yellow;
+    font-size: 50px;
+  }
+}
