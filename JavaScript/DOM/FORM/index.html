@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+
+  <!--Type 2 : INTERNAL  JS-->
+
+  <script>
+
+    alert("hiiii")
+
+
+  </script>
+
+</head>
+
+<body>
+
+  <!--
+
+    - Ways to handle Events 
+        - onclick - User Click what to happen  "inline Events"
+        - internal 
+        - addEventListener [ External Events]
+ ---------------------------------------------------
+    press : enter -> onsubmit Event Triggered
+
+    - Form events 
+      - sumbit
+      - blur
+      - change
+    
+    - e.target.value
+  -->
+
+  <form id="myForm">
+    <!--Email Element-->
+    <label for="email">Email</label>
+    <input type="email" placeholder="Enter a Email" id="email">
+    <p id="emailErrorMsg"></p>
+
+    <!--Pass Element-->
+    <label for="password">Password</label>
+    <input type="password" placeholder="Enter a password" id="password" required>
+    <p id="passwordErrorMsg"></p>
+
+    <!--Text Element-->
+    <label for="text">Text</label>
+    <input type="text" placeholder="Enter some Text" id="text">
+    <p id="textErrorMsg"></p>
+
+    <!--Sumbit Button-->
+    <button type="submit">Submit</button>
+  </form>
+
+
+  <!--Type 1 : INLINE JS [ BODY ]-->
+  <script>
+
+    
+  </script>
+
+
+  <!-- External JS -->
+  <script src="../FORM/script.js"></script>
+
+</body>
+
+</html>

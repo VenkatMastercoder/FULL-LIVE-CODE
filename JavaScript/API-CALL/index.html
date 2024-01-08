@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API - CALL</title>
+</head>
+
+<body>
+
+  <!-- 
+    
+      1. Synch IS js  
+          - 
+      
+      2. Asynchor 
+        - callbacks 
+        - fetch()
+      
+      - Promise is a Way to Handle a Asynchous Operation 
+
+      - then & catch [ OLD WAY TO HANDLE PROMISE] 
+      - Async / Await 
+
+    
+    JS PROMISES 
+      Resolve 
+        - PENDING 
+        - FULFILLED
+      Reject
+        - Rejected 
+
+
+
+
+  -->
+
+
+  <script>
+
+    // alert("1");
+    // alert("2");
+
+    // - "option"
+    //     - GET 
+    //     - POST
+    //     - PUST 
+    //     - DEL   
+
+    // GET 
+
+    // console.log("BEFORE API CALL")
+    // const a = fetch("https://gorest.co.in/public/v2/users")
+    // .then((response)=>{
+    //   return response
+    // }).then((res)=>{
+    //   console.log(res.json())
+    // }).catch((error)=>{
+    //   console.log(error)
+    // })
+    // console.log("AFTER API CALL")
+
+    async function a() {
+      console.log("Before")
+      try {
+
+        let data = {
+          "name": "VENKAT",
+          "email": "test_kdkcm;m@gmail.com",
+          "gender": "female",
+          "status": "inactive"
+        }
+
+
+        let Option = {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": "Bearer 7af49c322a5e1cbbabd30e3b8808c90b4c84d8d4a0064e6887d68109472e346d"
+          },
+          body: JSON.stringify(data)
+        }
+
+        const response = await fetch("https://gorest.co.in/public/v2/users", Option);
+        const responseData = await response.json();
+        console.log(responseData)
+      }
+      catch (error) {
+        console.log(error)
+      }
+    }
+
+    a()
+
+  </script>
+
+</body>
+
+</html>

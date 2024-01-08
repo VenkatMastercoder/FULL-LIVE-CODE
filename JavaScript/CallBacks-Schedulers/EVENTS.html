@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENTS</title>
+</head>
+
+<body>
+
+  <!--Inline Events -->
+  <button onclick="hello()" style="color:red;">Events in Inline</button>
+
+
+  <button style="color:red;" id="btn">Events in Internal</button>
+
+
+  <button style="color:red;" id="btn2">Events in Modern</button>
+
+  <input type="text" id="inputElement">
+
+
+  <script>
+
+    let btn = document.getElementById("btn");
+    let btn2 = document.getElementById("btn2");
+
+    function hello() {
+      console.log("hii")
+    }
+
+    btn.onclick = function hello() {
+      console.log("hii")
+    }
+
+    btn2.addEventListener("click",function hello() {
+      console.log("hii")
+    })
+
+    /*
+      element - let btn2 = document.getElementById("btn2");
+      events - click
+      function - callfuntion [ What we want to do ]
+    */
+
+    /* 
+      events - 
+        - click 
+        - change
+        - blur 
+        - Keyboard Events
+          - keyup
+          - keyDown    
+          - key
+    */
+
+    let inputElement = document.getElementById("inputElement");
+
+    function printDown(e) {
+      console.log("keyDown");
+
+      console.log(e.key)
+    }
+
+    function printup() {
+      console.log("keyDown");
+    }
+
+    inputElement.addEventListener("keydown",printDown);
+
+  </script>
+
+</body>
+
+</html>

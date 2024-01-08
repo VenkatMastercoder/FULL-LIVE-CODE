@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+  </head>
+  <body>
+
+    <!-- 
+      What is dom 
+        - Document Object Model [ Tree ] 
+
+      WHAT Is DOM API ?
+        - Method
+        - property
+        
+      - DOM Method
+        - getElementById [ Getter Method ]
+
+      - Events 
+        - onclick - User Click what to happen  "inline Events"
+        - internal 
+        - addEventListener [ External Events]
+      
+      - Property
+        - Text change [ Textcontent ]
+        - style 
+    -->
+
+    <h1 id="headingElement">Hello</h1>
+
+    <button onclick="styleChange()">Click me</button>
+
+
+    <script>
+      // console.log(document.getElementById("headingElement"))
+
+      let headingElement = document.getElementById("headingElement")
+
+      function styleChange(){
+        headingElement.textContent = "hi"
+        headingElement.style.color = "red"
+        console.log(headingElement)
+      }
+
+    </script>
+
+  </body>
+</html>

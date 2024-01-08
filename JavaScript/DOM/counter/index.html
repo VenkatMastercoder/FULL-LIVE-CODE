@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter </title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <h1 class="">counter</h1>
+
+  <p id="pElement">0</p>
+
+  <div>
+    <button onclick="onDecrement()" class="bg-red-500 p-5">-</button>
+    <button onclick="onReset()" class="bg-gray-500 p-5">Reset</button>
+    <button onclick="onIncrement()" class="bg-green-500 p-5">+</button>
+  </div>
+
+
+  <script>
+
+    let pElement = document.getElementById("pElement"); // Element Value - 0
+
+    function onDecrement() {
+      console.log("on -")
+      let preCoutervaule = pElement.textContent // 1
+
+      let newValue = parseInt(preCoutervaule) - 1 // parseInt("1") + 1 == 1-1 = 0
+
+      pElement.textContent = newValue; // -->  NEW VALUE
+
+      pElement.style.color = "red";
+    }
+
+
+    function onReset() {
+      console.log("on Reset")
+      let preCoutervaule = pElement.textContent
+
+      let newValue = 0
+
+      pElement.textContent = newValue;
+
+      pElement.style.color = "#000";
+
+    }
+
+    function onIncrement() {
+      console.log("on +")
+      let preCoutervaule = pElement.textContent
+
+      let newValue = parseInt(preCoutervaule) + 1
+
+      pElement.textContent = newValue;
+
+      pElement.style.color = "green";
+    }
+
+  </script>
+</body>
+
+</html>

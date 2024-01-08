@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>CAT - BULB PROJECT</title>
+</head>
+
+<body>
+
+  <!-- 
+    - DOM TREE [ STEP ]
+      DOC   
+        - HTML
+            - HEAD 
+            - BODY 
+              -  DIV
+                 - IMG 
+              - DIV 
+                  - IMG
+              - DIV 
+                  - BUTTON
+      DOC API 
+        - METHOD  - getElementByID - id name
+        - PROPERTY - style - style.
+                   - Att - src
+                   - cont - textContent
+        - event 
+            - onclick 
+  -->
+
+  <div class="bg-black h-screen">
+    <div>
+      <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573" alt="bulb-img"
+        class="h-40" id="buldImg" />
+    </div>
+
+    <div>
+      <img src="https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774" alt="cat-img"
+        class="h-40" id="catImg" />
+    </div>
+
+    <div class="bg-red-500">
+      <p id="text">Switched on</p>
+
+      <button id="onButton" onclick="switchOn()" class=" w-[20px] p-5">on</button>
+      <button onclick="switchOff()" class="bg-red-400 w-[20px] p-5" id="offButton">off</button>
+    </div>
+  </div>
+
+  <script>
+    let bulbImg = document.getElementById("buldImg");
+    let catImg = document.getElementById("catImg");
+    let textElement = document.getElementById("text");
+    let btnOn = document.getElementById("onButton");
+
+    function switchOn() {
+      console.log("test Switched on");
+      bulbImg.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-off-img.png?updatedAt=1702818065200";
+      catImg.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-eyes-img.png?updatedAt=1702818102345";
+      textElement.textContent = "off";
+      btnOn.style.backgroundColor = "#000";
+
+    }
+
+    function switchOff() {
+      console.log("test Switched off");
+      bulbImg.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/bulb-go-on-img.png?updatedAt=1702818139573";
+      catImg.src = "https://ik.imagekit.io/4z8covdo9/Full%20stack/cat-img.png?updatedAt=1702818167774";
+
+      textElement.textContent = "on";
+      btnOn.style.backgroundColor = "#fff";
+    }
+
+
+  </script>
+</body>
+
+</html>
